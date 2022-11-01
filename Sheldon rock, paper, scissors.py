@@ -7,7 +7,7 @@ options = ["rock", "paper", "scissors", "spock", "lizard"]
 options 
 
 while True:
-    user_input = input("Type Rock/Paper/Scissors of Q to quit: ").lower()
+    user_input = input("Type Rock/Paper/Scissors/Spock/Lizard or Q to quit: ").lower()
     if user_input == "q" :
         break
 
@@ -67,6 +67,11 @@ while True:
     elif user_input == "spock" and computer_pick == "rock":
         print("You won!")
         user_wins += 1
+
+    elif user_input == computer_pick:
+        print("Draw, Go again!")
+        
+    
     
     else:
         print("You lost!")
